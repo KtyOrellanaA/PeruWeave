@@ -4,7 +4,7 @@ Este es un proyecto ficticio, que se está llevando a cabo como parte del curso 
 ## 1RA ENTREGA
 ![1era entrega](https://github.com/KtyOrellanaA/PeruWeave/assets/110733733/d72ac5d5-a4fc-44d1-9d91-5bbcf754feda)
 
-![2da entrega]
+## 2DA ENTREGA
 ![2da entrega](https://github.com/user-attachments/assets/5f6d4940-b7b7-4f46-9782-746451a21c2b)
 
 # 💫 About Me:
