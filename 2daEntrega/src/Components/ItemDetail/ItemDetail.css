@@ -1,0 +1,45 @@
+.detail-card-horizontal {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 2rem auto;
+    max-width: 900px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detail-img-horizontal {
+    width: 350px;
+    height: auto;
+    border-radius: 15px;
+    margin-right: 1rem;
+}
+
+.detail-body-horizontal {
+    display: flex;
+    margin-left: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.detail-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.detail-category, .detail-description, .detail-price {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+}
+
+.detail-price {
+    font-weight: bold;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    color: #0083c9;
+}
+
+
