@@ -1,0 +1,21 @@
+.greeting1 {
+    margin-top: 25px;
+    font-size: 48px;
+}
+.greeting2 {
+    margin-bottom: 15px;
+    font-size: 36px;
+}
+
+.Image {
+    border-radius: 30px;
+}
+
+.loading-message {
+    color: #51bbb3;
+    background: #e1efee;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+    font-size: 3em;
+}
