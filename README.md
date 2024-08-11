@@ -7,6 +7,9 @@ Este es un proyecto ficticio, que se está llevando a cabo como parte del curso 
 ## 2da entrega
 ![2da entrega](https://github.com/user-attachments/assets/5f6d4940-b7b7-4f46-9782-746451a21c2b)
 
+## 3ra entrega
+![3ra entrega](https://github.com/user-attachments/assets/61094c99-2d69-4876-8e02-24df1a7a24be)
+
 # 💫 About Me:
 ¡Hola! 👋 Soy Katty Orellana, profesional con más de 18 años de experiencia profesional. Soy UX/UI Designer, diseñadora gráfica, ilustradora y animadora 2D. 🎨✨<br>🚀 Junto a nuestro emprendimiento Kty&Pili: brindamos diversos servicios creativos para colaborar con emprendedores y empresas a nivel nacional e internacional en proyectos emocionantes.<br>Contáctanos y síguenos en las redes sociales: https://linktr.ee/ktypili<br>
 <br>------<br>
