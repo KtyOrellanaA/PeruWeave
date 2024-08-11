@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-import { getProducts , getProductsByCategory } from "../../asyncMock";
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { useParams } from "react-router-dom";
 import "./ItemListContainer.css";
 import ItemList from "../ItemList/ItemList";
-import { useParams } from "react-router-dom";
 import Carousel from "../Carousel/Carousel";
+import { db } from "../../services/firebase";
 
 const ItemListContainer = ({greeting1, greeting2}) => {
         const [products, setProducts] = useState ([])
@@ -11,24 +12,23 @@ const ItemListContainer = ({greeting1, greeting2}) => {
         const {category} = useParams ()
         
         useEffect (() => {
-            setLoading(true); // Activar el estado de carga al inicio del efecto
+            setLoading(true);
 
-            if (!category) {
-                getProducts()
-                    .then ( (res) => {
-                        setProducts(res)
-                    })
-                    .catch ( (err) => console.log (err))
-                    .finally(() => setLoading(false))
-            } else {
-                getProductsByCategory (category)
-                    .then ( (res) => {
-                        setProducts (res)
-                    })
-                    .catch ( (err) => console.log(err))
-                    .finally(() => setLoading(false))
-            }
-        }, [category])
+            const collectionRef = category
+                ? query(collection(db, "Productos"), where("category", "==", category))
+                : collection(db, "Productos");
+
+            getDocs(collectionRef)
+                .then((response) => {
+                    const productsData = response.docs.map((doc) => ({
+                        id: doc.id,
+                        ...doc.data(),
+                    }));
+                    setProducts(productsData);
+                })
+                .catch((err) => console.log(err))
+                .finally(() => setLoading(false));
+        }, [category]);
 
         if (loading) {
             return <h1 className="loading-message">Cargando productos ...</h1>

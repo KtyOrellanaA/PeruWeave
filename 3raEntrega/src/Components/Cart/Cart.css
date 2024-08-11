@@ -1,0 +1,11 @@
+.btn-count2 {
+    background-color: #0083c9;
+    color: white;
+    border: 0;
+    padding: 5px 20px;
+    font-size: 1.2rem;
+}
+
+.btn-count2:hover {
+    background-color: #005f8a;
+}

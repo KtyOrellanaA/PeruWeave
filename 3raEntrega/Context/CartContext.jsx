@@ -1,4 +1,5 @@
 import { Children, createContext, useState } from "react";
+import Item from "../src/Components/Item/Item";
 
 export const CartContext = createContext ();
 
@@ -50,6 +51,14 @@ export const CartProvider = ({children}) => {
         setCart((prev) => prev.filter((prod) => prod.id !== id));
     };
 
+    const getTotal = () => {
+        let accu = 0
+        cart.forEach ((Item) => {
+            accu += Item.quantity * Item.price
+        })
+        return accu
+    }
+
     const totalQuantity = getTotalQuantity();
 
     const obj = {
@@ -60,6 +69,7 @@ export const CartProvider = ({children}) => {
         clearCart,
         removeItem,
         totalQuantity,
+        getTotal,
     };
 
     return (
